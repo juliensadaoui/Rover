@@ -62,7 +62,7 @@ public class Plateau implements IPlateau
 	 * Verifie la position d'un objet sur le plateau
 	 * 
 	 * @param point <strong>Point</strong> point representant la position de l'objet
-	 * @return <strong>boolean</strong> true si l'objet est positionne dans le plateau,
+	 * @return <strong>boolean</strong> true si l'objet est dans le plateau,
 	 * 	false autrement
 	 */
 	public boolean check(Point point)
