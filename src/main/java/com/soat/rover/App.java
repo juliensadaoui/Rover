@@ -1,5 +1,6 @@
 package com.soat.rover;
 
+import com.soat.rover.model.IPlateau;
 import com.soat.rover.model.Plateau;
 import com.soat.rover.model.Rover;
 
@@ -22,7 +23,7 @@ public class App
 		System.out.println("Test Input:");
 		
 		// initialisation du plateau
-		Plateau plateau = new Plateau(5, 5);
+		IPlateau plateau = new Plateau(5, 5);
 		System.out.println("5 5 ");
 		
 		// D�ploiement du premier robot

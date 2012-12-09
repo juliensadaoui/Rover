@@ -2,7 +2,7 @@ package com.soat.rover.command;
 
 
 import com.soat.rover.model.CardinalPoint;
-import com.soat.rover.model.Plateau;
+import com.soat.rover.model.IPlateau;
 import com.soat.rover.model.Point;
 import com.soat.rover.model.Rover;
 
@@ -22,7 +22,7 @@ public class MoveCommand implements ICommand
 	@Override
 	public void execute(Rover rover) 
 	{
-		Plateau plateau = rover.getPlateau();
+		IPlateau plateau = rover.getPlateau();
 		Point point = rover.getPoint();
 		CardinalPoint direction = rover.getDirection();
 		

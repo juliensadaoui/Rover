@@ -3,6 +3,7 @@ package com.soat.rover.model;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.CoreMatchers.sameInstance;
+import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.verify;
@@ -26,7 +27,7 @@ import org.powermock.modules.junit4.PowerMockRunner;
 public class RoverTest
 {
 	private Rover   rover;
-	private Plateau plateau;
+	private IPlateau plateau;
 	
 	@Before
 	public void setUp() throws Exception 
@@ -78,11 +79,9 @@ public class RoverTest
 		rover.setPlateau(plateau);
 		
 		// tests that the values is correct
-		Plateau resPlateau = rover.getPlateau();
+		IPlateau resPlateau = rover.getPlateau();
 		assertThat(resPlateau, notNullValue());
-		assertThat(resPlateau, sameInstance(plateau));
-		assertThat(resPlateau.getWidth(), equalTo(10));
-		assertThat(resPlateau.getHeigth(), equalTo(10));
+		assertThat(resPlateau.check(new Point(10,11)), equalTo(false));
 	}
 	
 	/**

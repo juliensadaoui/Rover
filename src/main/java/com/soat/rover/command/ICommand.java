@@ -4,7 +4,7 @@ import com.soat.rover.model.Rover;
 
 /**
  * Interface representant les commandes du robot.
- * Utilisation du design pattern Command (simplifié)
+ * Utilisation du design pattern Command (simplifiÃ©)
  * 
  * @author Julien
  *

@@ -13,14 +13,14 @@ public class Rover
 	// fields --------------------------
 	private Point point;
 	private CardinalPoint direction;
-	private Plateau plateau;
+	private IPlateau plateau;
 
 	/**
 	 * Constructor
 	 * 
 	 * @param plateau
 	 */
-	public Rover(Plateau plateau)
+	public Rover(IPlateau plateau)
 	{
 		this.point = new Point(0,0);
 		this.direction = CardinalPoint.NORTH;
@@ -73,7 +73,7 @@ public class Rover
 	 * 
 	 * @return <strong>Plateau</strong> plateau on Mars
 	 */
-	public Plateau getPlateau() 
+	public IPlateau getPlateau() 
 	{
 		return plateau;
 	}

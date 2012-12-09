@@ -1,6 +1,6 @@
 package com.soat.rover.model;
 
-public class Plateau 
+public class Plateau implements IPlateau
 {
 	// fields -----------------
 	private int width; 
@@ -62,7 +62,7 @@ public class Plateau
 	 * Verifie la position d'un objet sur le plateau
 	 * 
 	 * @param point <strong>Point</strong> point representant la position de l'objet
-	 * @return <strong>boolean</strong> true si l'objet est positionné dans le plateau,
+	 * @return <strong>boolean</strong> true si l'objet est positionne dans le plateau,
 	 * 	false autrement
 	 */
 	public boolean check(Point point)
